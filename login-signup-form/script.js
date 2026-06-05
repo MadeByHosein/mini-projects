@@ -1,9 +1,11 @@
-const container = document.querySelector(".container");
+const container = document.querySelector('.container');
+const LoginLink = document.querySelector('.SignInLink');
+const RegisterLink = document.querySelector('.SignUpLink');
 
-document.querySelector(".to-register").onclick = () => {
-  container.classList.add("active");
-};
+RegisterLink.addEventListener('click', () =>{
+    container.classList.add('active');
+})
 
-document.querySelector(".to-login").onclick = () => {
-  container.classList.remove("active");
-};
+LoginLink.addEventListener('click', () => {
+    container.classList.remove('active');
+})
